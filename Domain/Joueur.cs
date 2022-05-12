@@ -19,7 +19,7 @@ namespace Domain
         public virtual IList<Jouer> Jouers { get; set; }
             
         public virtual Pays Pays { get; set; }
-        public int PaysFK { get; set; }
+        public string PaysFK { get; set; }
 
     }
 }

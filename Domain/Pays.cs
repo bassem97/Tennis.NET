@@ -6,7 +6,7 @@ namespace Domain
     public class Pays
     {
         [Key]
-        public int CodePays { get; set; }
+        public string CodePays { get; set; }
         public string Nom { get; set; }
         public string Monnaie { get; set; }
         
