@@ -32,7 +32,8 @@
             <th>
                 @Html.DisplayNameFor(model => model.Pays)
             </th>
-            <th></th>
+            
+            <th>List des tournois</th>
         </tr>
     </thead>
     <tbody>
@@ -55,11 +56,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Pays.CodePays)
             </td>
-            <td>
-                @* <a asp-action="Edit" asp-route-id="@item.JoueurId">Edit</a> | *@
-                @* <a asp-action="Details" asp-route-id="@item.JoueurId">Details</a> | *@
-                @* <a asp-action="Delete" asp-route-id="@item.JoueurId">Delete</a> *@
-            </td>
+         
         </tr>
 }
     </tbody>
