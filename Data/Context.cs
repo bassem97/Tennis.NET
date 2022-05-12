@@ -11,7 +11,7 @@ namespace Data
         
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data source= (localdb)\MSSQLLOCALDB; INITIAL CATALOG= NomPrenom; INTEGRATED SECURITY= TRUE").UseLazyLoadingProxies();
+            optionsBuilder.UseSqlServer(@"Data source= (localdb)\MSSQLLOCALDB; INITIAL CATALOG= EsmLa9ab; INTEGRATED SECURITY= TRUE").UseLazyLoadingProxies();
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
