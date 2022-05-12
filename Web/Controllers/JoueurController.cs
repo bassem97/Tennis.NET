@@ -29,6 +29,21 @@ namespace Web.Controllers
 
             return View(listJoueurs);
         }
+        
+        [HttpPost]
+        public ActionResult Index(string search)
+        {
+            List<Joueur> listJoueurs;
+            if (!string.IsNullOrEmpty(search))
+            {
+                listJoueurs = _joueurService.GetMany(d => d.Nom.StartsWith(search)).ToList();
+            }
+            else
+            {
+                listJoueurs = _joueurService.GetMany().ToList();
+            }
+            return View(listJoueurs);
+        }
 
       
 
