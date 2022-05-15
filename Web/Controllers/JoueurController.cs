@@ -25,7 +25,7 @@ namespace Web.Controllers
         // GET: Joueur
         public IActionResult Index()
         {
-            List<Joueur> listJoueurs = _joueurService.GetMany().ToList();
+            List<Joueur> listJoueurs = _joueurService.GetMany().OrderBy(j => j.Nom).ToList();
 
             return View(listJoueurs);
         }
@@ -36,7 +36,7 @@ namespace Web.Controllers
             List<Joueur> listJoueurs;
             if (!string.IsNullOrEmpty(search))
             {
-                listJoueurs = _joueurService.GetMany(d => d.Nom.StartsWith(search)).ToList();
+                listJoueurs = _joueurService.GetMany(d => d.Nom.StartsWith(search)).OrderBy(j => j.Nom).ToList();
             }
             else
             {

@@ -678,3 +678,4 @@ C:\Users\BASSEM\Desktop\BassemJadoui\Web\bin\Debug\netcoreapp3.1\runtimes\win-x6
 C:\Users\BASSEM\Desktop\BassemJadoui\Web\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 C:\Users\BASSEM\Desktop\BassemJadoui\Web\obj\Debug\netcoreapp3.1\Razor\Views\Joueur\Create.cshtml.g.cs
 C:\Users\BASSEM\Desktop\BassemJadoui\Web\obj\Debug\netcoreapp3.1\Razor\Views\Joueur\Index.cshtml.g.cs
+C:\Users\BASSEM\Desktop\BassemJadoui\Web\obj\Debug\netcoreapp3.1\Razor\Views\Joueur\IndexTournoi.cshtml.g.cs
