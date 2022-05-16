@@ -45,8 +45,6 @@ namespace Web.Controllers
             return View(listJoueurs);
         }
 
-      
-
         // GET: Joueur/Create
         public ActionResult Create()
         {
@@ -70,8 +68,6 @@ namespace Web.Controllers
             _joueurService.Add(joueur);
             _joueurService.Commit();
             return RedirectToAction(nameof(Index));
-       
-          
         }
 
    

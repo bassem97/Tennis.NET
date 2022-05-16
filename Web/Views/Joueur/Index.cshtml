@@ -57,7 +57,12 @@
                 @Html.DisplayFor(modelItem => item.Pays.CodePays)
             </td>
             <td>
-                @* <partial name="_tournois" model="item.Jouers.Select(j => j.Tournoi.)"/> *@
+                @if (item.Jouers.Select(jouer => jouer.Tournoi).ToList().Count() > 0){
+                    <partial name="index_tournoi" model="item.Jouers.Select(j => j.Tournoi)"/>
+                }
+                else{
+                    <p>Aucun tournoi</p>
+                }
             </td>
         </tr>
 }
