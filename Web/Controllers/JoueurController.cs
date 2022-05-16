@@ -69,8 +69,5 @@ namespace Web.Controllers
             _joueurService.Commit();
             return RedirectToAction(nameof(Index));
         }
-
-   
-       
     }
 }

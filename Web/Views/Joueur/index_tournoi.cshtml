@@ -1,0 +1,46 @@
+
+ @model IEnumerable<Domain.Tournoi>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nom)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Coef)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Dotation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nom)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Date)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Coef)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Dotation)
+            </td>
+            @* <td> *@
+            @*     <a asp-page="./Edit" asp-route-id="@item.NoTour">Edit</a> | *@
+            @*     <a asp-page="./Details" asp-route-id="@item.NoTour">Details</a> | *@
+            @*     <a asp-page="./Delete" asp-route-id="@item.NoTour">Delete</a> *@
+            @* </td> *@
+        </tr>
+}
+    </tbody>
+</table>
